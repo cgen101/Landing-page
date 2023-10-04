@@ -80,6 +80,26 @@ body {
     text-shadow: 5px 2px 4px #000000;
 }
 
+  .welcome p {
+    margin-bottom:30px;
+    white-space:nowrap;
+    overflow:hidden;
+    animation:typing 2s steps(22,end) forwards,
+              blink 1s infinite;
+  }
+  @keyframes typing {
+    0% { width:0% }
+    100% { width:58% }
+  }
+  @keyframes blink {
+    0%,100% {
+      border-right:2px solid transparent;
+    }
+    50% {
+      border-right:2px solid #000000;
+    }
+
+  }
 
 .content { 
     display: flex;
@@ -188,7 +208,7 @@ body {
     height: 55px;
     padding: 5px;
     border-radius: 100px;
-    margin-top: 30px;
+    margin-top: 12px;
     background-color: #dfe5c2;
     font-family: 'Space Mono', monospace;
 }
